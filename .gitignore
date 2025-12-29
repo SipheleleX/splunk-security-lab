@@ -1,0 +1,34 @@
+# Splunk data and logs
+splunk-data/
+attack-logs/*.json
+suricata-logs/
+reports/
+
+# Docker volumes
+*.log
+
+# Sensitive files
+*.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# Docker
+.dockerignore
+
+# Keep directory structure but ignore contents
+!attack-logs/.gitkeep
+!reports/.gitkeep
