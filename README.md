@@ -1,4 +1,4 @@
-# 🔐 Splunk Security Monitoring Lab
+#  Splunk Security Monitoring Lab
 
 [![Docker](https://img.shields.io/badge/Docker-Compose-blue.svg)](https://www.docker.com/)
 [![Splunk](https://img.shields.io/badge/Splunk-Enterprise-green.svg)](https://www.splunk.com/)
@@ -6,23 +6,23 @@
 
 A containerized Security Operations Center (SOC) environment demonstrating real-world threat detection and security monitoring using Splunk Enterprise - the industry-standard SIEM platform.
 
-![Security Dashboard](screenshots/dashboard-preview.png)
+![Security Dashboard](<img width="1903" height="1040" alt="image" src="https://github.com/user-attachments/assets/b3dbe122-d722-4cc8-8353-740e8233ffe1" />)
 *Main security monitoring dashboard showing real-time attack detection*
 
-## 🎯 Project Overview
+##  Project Overview
 
 This project simulates a production SOC environment capable of detecting, analyzing, and visualizing cybersecurity threats in real-time. Built with industry-standard tools, it demonstrates practical skills applicable to SOC Analyst, Security Engineer, and SIEM Administrator roles.
 
 ### Key Features
 
-- ✅ **Real-time Threat Detection**: Monitors and alerts on security events as they occur
-- ✅ **Attack Simulation**: Automated generation of 8+ attack types including SQL Injection, XSS, Command Injection
-- ✅ **Custom Dashboards**: Executive, analyst, and real-time monitoring views
-- ✅ **Alert Management**: Configurable alerting for critical security events
-- ✅ **Containerized Deployment**: Fully portable using Docker Compose
-- ✅ **Industry Tools**: Splunk Enterprise (used by 70% of Fortune 500 companies)
+-  **Real-time Threat Detection**: Monitors and alerts on security events as they occur
+-  **Attack Simulation**: Automated generation of 8+ attack types including SQL Injection, XSS, Command Injection
+-  **Custom Dashboards**: Executive, analyst, and real-time monitoring views
+-  **Alert Management**: Configurable alerting for critical security events
+-  **Containerized Deployment**: Fully portable using Docker Compose
+-  **Industry Tools**: Splunk Enterprise (used by 70% of Fortune 500 companies)
 
-## 🏗️ Architecture
+##  Architecture
 ```
 ┌──────────────────────────────────────────────────────┐
 │                   Splunk SIEM                        │
@@ -54,7 +54,7 @@ This project simulates a production SOC environment capable of detecting, analyz
 └──────────────────────────────────────────────────────┘
 ```
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 | Component | Technology | Purpose |
 |-----------|------------|---------|
@@ -65,7 +65,7 @@ This project simulates a production SOC environment capable of detecting, analyz
 | **Container Platform** | Docker & Docker Compose | Orchestration & deployment |
 | **Scripting** | Bash | Automation & attack simulation |
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -130,7 +130,7 @@ This generates various attack types:
 - Brute Force attacks
 - Security scanner detection
 
-## 📊 Dashboards & Visualizations
+##  Dashboards & Visualizations
 
 ### 1. Security Monitoring Dashboard
 **Purpose**: Executive overview of security posture
@@ -172,7 +172,7 @@ index=main sourcetype=_json severity="critical"
 | sort -_time
 ```
 
-## 🔍 Sample Splunk Searches (SPL)
+##  Sample Splunk Searches (SPL)
 
 ### Basic Searches
 
@@ -218,39 +218,39 @@ index=main sourcetype=_json
 | head 10
 ```
 
-## 🎓 Skills Demonstrated
+##  Skills Demonstrated
 
 ### Technical Skills
-- ✅ SIEM Administration (Splunk)
-- ✅ Security Log Analysis
-- ✅ SPL (Splunk Processing Language)
-- ✅ Attack Pattern Recognition
-- ✅ Dashboard Development
-- ✅ Docker & Container Orchestration
-- ✅ Linux System Administration
-- ✅ Bash Scripting & Automation
+-  SIEM Administration (Splunk)
+-  Security Log Analysis
+-  SPL (Splunk Processing Language)
+-  Attack Pattern Recognition
+-  Dashboard Development
+-  Docker & Container Orchestration
+-  Linux System Administration
+-  Bash Scripting & Automation
 
 ### Security Knowledge
-- ✅ OWASP Top 10 Vulnerabilities
-- ✅ Attack Vectors & TTPs
-- ✅ Security Monitoring Best Practices
-- ✅ Incident Detection & Analysis
-- ✅ Threat Classification
+-  OWASP Top 10 Vulnerabilities
+-  Attack Vectors & TTPs
+-  Security Monitoring Best Practices
+-  Incident Detection & Analysis
+-  Threat Classification
 
-## 📈 Detection Capabilities
+##  Detection Capabilities
 
 | Attack Type | Detection Method | Severity | Status |
 |-------------|------------------|----------|--------|
-| SQL Injection | Pattern matching (UNION, OR) | Critical | ✅ Active |
-| XSS | Script tag & event detection | Medium | ✅ Active |
-| Command Injection | Shell metacharacter detection | Critical | ✅ Active |
-| Directory Traversal | Path traversal patterns | High | ✅ Active |
-| Brute Force | Failed login threshold | Medium | ✅ Active |
-| Scanner Detection | User-agent fingerprinting | Low | ✅ Active |
-| CSRF | Request pattern analysis | Medium | ✅ Active |
-| File Upload | Extension validation bypass | Critical | ✅ Active |
+| SQL Injection | Pattern matching (UNION, OR) | Critical |  Active |
+| XSS | Script tag & event detection | Medium |   Active |
+| Command Injection | Shell metacharacter detection | Critical |  Active |
+| Directory Traversal | Path traversal patterns | High |  Active |
+| Brute Force | Failed login threshold | Medium |  Active |
+| Scanner Detection | User-agent fingerprinting | Low |  Active |
+| CSRF | Request pattern analysis | Medium |  Active |
+| File Upload | Extension validation bypass | Critical |  Active |
 
-## 🔧 Configuration
+##  Configuration
 
 ### Changing the Admin Password
 
@@ -275,7 +275,7 @@ curl -s "$TARGET/your-endpoint?param=attack" > /dev/null
 3. Click **Save As** → **Alert**
 4. Configure trigger conditions and actions
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Splunk won't start
 ```bash
@@ -309,7 +309,7 @@ sudo netstat -tulpn | grep -E ':(8000|8080|8081)'
 # Modify docker-compose.yml to use different ports
 ```
 
-## 📸 Screenshots
+##  Screenshots
 
 ![Dashboard Overview](screenshots/dashboard-overview.png)
 *Security monitoring dashboard with real-time metrics*
@@ -320,7 +320,7 @@ sudo netstat -tulpn | grep -E ':(8000|8080|8081)'
 ![SPL Query](screenshots/spl-query.png)
 *Custom SPL query analyzing attack patterns*
 
-## 🚀 Future Enhancements
+##  Future Enhancements
 
 - [ ] Integration with threat intelligence feeds (MISP, AlienVault OTX)
 - [ ] Machine learning for anomaly detection
@@ -330,18 +330,18 @@ sudo netstat -tulpn | grep -E ':(8000|8080|8081)'
 - [ ] Multi-node Splunk cluster deployment
 - [ ] Cloud integration (AWS, Azure)
 
-## 📚 Learning Resources
+##  Learning Resources
 
 - [Splunk Documentation](https://docs.splunk.com)
 - [SPL Reference Guide](https://docs.splunk.com/Documentation/Splunk/latest/SearchReference)
 - [OWASP Top 10](https://owasp.org/www-project-top-ten/)
 - [MITRE ATT&CK Framework](https://attack.mitre.org/)
 
-## 📝 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -351,13 +351,13 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 👤 Author
+##  Author
 
 **Siphelele**
 - GitHub: [@SipheleleX](https://github.com/SipheleleX)
-- LinkedIn: [Your LinkedIn Profile]
+- LinkedIn: [[Siphelele Xaba](https://www.linkedin.com/in/siphelele-x-929a45267/)]
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Splunk for providing enterprise-grade SIEM software
 - DVWA team for the vulnerable web application
@@ -365,6 +365,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-⭐ If you found this project useful, please consider giving it a star!
+ If you found this project useful, please consider giving it a star!
 
-**Built with ❤️ for the cybersecurity community**
+**Built with love and passion for the cybersecurity community**
