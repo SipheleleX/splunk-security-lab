@@ -6,7 +6,8 @@
 
 A containerized Security Operations Center (SOC) environment demonstrating real-world threat detection and security monitoring using Splunk Enterprise - the industry-standard SIEM platform.
 
-![Security Dashboard](<img width="1903" height="1040" alt="image" src="https://github.com/user-attachments/assets/b3dbe122-d722-4cc8-8353-740e8233ffe1" />)
+<img width="1918" height="1038" alt="image" src="https://github.com/user-attachments/assets/a4bcfefa-7c8a-4823-8c1a-0422a568683e" />
+
 *Main security monitoring dashboard showing real-time attack detection*
 
 ##  Project Overview
@@ -92,6 +93,8 @@ echo "vm.max_map_count=262144" | sudo tee -a /etc/sysctl.conf
 ```bash
 docker-compose up -d
 ```
+<img width="1920" height="1080" alt="docker ps" src="https://github.com/user-attachments/assets/33fa5ca5-56d1-4e3e-a3a5-fdc145efd46b" />
+
 
 4. **Wait for Splunk to start (2-3 minutes)**
 ```bash
@@ -121,6 +124,8 @@ chmod +x attack-simulator.sh
 # Run attack simulation
 ./attack-simulator.sh
 ```
+<img width="1920" height="1080" alt="attack script execution" src="https://github.com/user-attachments/assets/39a9bf8d-8365-48fb-ba9e-22212f40147b" />
+
 
 This generates various attack types:
 - SQL Injection (UNION-based, Boolean-based)
@@ -311,14 +316,17 @@ sudo netstat -tulpn | grep -E ':(8000|8080|8081)'
 
 ##  Screenshots
 
-![Dashboard Overview](screenshots/dashboard-overview.png)
+<img width="1918" height="1038" alt="image" src="https://github.com/user-attachments/assets/9c3a6ba4-1f56-41d9-92ca-20501c22e5b3" />
+
 *Security monitoring dashboard with real-time metrics*
 
-![Attack Detection](screenshots/attack-detection.png)
+<img width="1920" height="1080" alt="attack script execution" src="https://github.com/user-attachments/assets/481f3311-d7ee-4e27-91d5-cd02d78ae7e6" />
+
 *Live attack feed showing detected threats*
 
-![SPL Query](screenshots/spl-query.png)
-*Custom SPL query analyzing attack patterns*
+<img width="1920" height="1080" alt="search results critical only" src="https://github.com/user-attachments/assets/a0600302-5f2e-47a0-b8c1-3b0b22958191" />
+
+*Custom SPL query analyzing attack patterns (critical only)*
 
 ##  Future Enhancements
 
