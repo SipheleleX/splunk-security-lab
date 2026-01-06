@@ -363,7 +363,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 **Siphelele**
 - GitHub: [@SipheleleX](https://github.com/SipheleleX)
-- LinkedIn: [[Siphelele Xaba](https://www.linkedin.com/in/siphelele-x-929a45267/)]
+- LinkedIn: [Siphelele Xaba](https://www.linkedin.com/in/siphelele-x-929a45267/)
 
 ##  Acknowledgments
 
